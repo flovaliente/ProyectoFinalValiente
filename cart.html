@@ -1,0 +1,106 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Shop | Valsaa</title>
+  </head>
+  <body>
+    
+    <header>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="nav-bar-icons">
+              <a href="#" class="icon"><i class="fas fa-search"></i></a>
+              <a href="#" class="icon"><i class="fas fa-user"></i></a>
+              <a href="./cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="nav-bar-brand">
+              <a href="../index.html">
+                <img src="img/logo.png" alt="Valsaa Logo" class="brand-logo">
+              </a>
+            </div>
+            <div class="nav-bar-bottom">
+              <ul class="nav-bar-menu">
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="#">Rebajas</a></li>
+                <li><a href="#">Precios Especiales</a></li>
+                <li><a href="./locales.html">Locales</a></li>
+              </ul>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Valsaa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Rebajas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Precios Especiales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./locales.html">Locales</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <main>
+      <div class="cart-container">
+        <div class="cart-details">
+          <h2>DETALLE DEL PEDIDO</h2>
+          <div class="cart-account">
+            <p>flovaliente143@gmail.com</p>
+            <a href="#">Cambiar cuenta</a>
+          </div>
+          <ul class="cart-items">
+            <li class="cart-item">
+              <div class="cart-item-info">
+                <img src="./img/prod1.jpg" alt="Camisa Mango" class="cart-item-img">
+                <div class="cart-item-description">
+                  <h3>Camisa Mango</h3>
+                  <p class="product-code">Art: RED-BRISA-554</p>
+                </div>
+              </div>
+              <div class="cart-item-quantity">
+                <button class="quantity-btn">-</button>
+                <span>1</span>
+                <button class="quantity-btn">+</button>
+              </div>
+
+              <p>$ UYU 2100 </p>
+                    
+              <a id="cart-data"><i class="fa-regular fa-trash-can"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  
+    <div class="cart-actions">
+      <a href="./index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i>SEGUIR COMPRANDO</a>
+      <div>
+        <span class="sim">$ UYU </span>
+        <span class="amount">2.100</span>
+      </div>
+      
+      <a href="/envio" class="continue-btn">CONTINUAR<i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    
+  </body>
+</html>
