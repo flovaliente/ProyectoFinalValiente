@@ -1,0 +1,27 @@
+[
+    {"id": 1, "nombre": "Camisa Mango", "precio": 2100, "categoria":"camisa", "imagen": "img/prod1.jpg","stock": 2},
+    {"id": 2, "nombre": "Pantalon Hanna", "precio": 3200, "categoria":"pantalon", "imagen": "img/prod2.jpg","stock": 4},
+    {"id": 3, "nombre": "Campera Nala", "precio": 3600, "categoria":"campera", "imagen": "img/prod3.jpg", "stock": 5},
+    {"id": 4, "nombre": "Blusa Flowers", "precio": 2800, "categoria":"blusa", "imagen": "img/prod4.jpg", "stock": 4},
+    {"id": 5, "nombre": "Camisa Colors", "precio": 3250, "categoria":"camisa", "imagen": "img/prod5.jpg", "stock": 2},
+    {"id": 6, "nombre": "Red Brisa", "precio": 3450, "categoria":"buzo", "imagen": "img/prod6.jpg", "stock": 3},
+    {"id": 7, "nombre": "Pantalon Leah", "precio": 4500, "categoria":"pantalon", "imagen": "img/prod7.jpg", "stock": 6},
+    {"id": 8, "nombre": "Jean Cava", "precio": 3900, "categoria":"pantalon", "imagen": "img/prod8.jpg", "stock": 7},
+    {"id": 9, "nombre": "Vestido Shan", "precio": 8100, "categoria":"vestido", "imagen": "img/prod9.jpg", "stock": 5},
+    {"id": 10, "nombre": "Vestido Lio", "precio": 7650, "categoria":"vestido", "imagen": "img/prod10.jpg", "stock": 5},
+    {"id": 11, "nombre": "Chaleco Amade", "precio": 3900, "categoria":"chaleco", "imagen": "img/prod21.jpg", "stock": 4},
+    {"id": 12, "nombre": "Buzo Ibiza", "precio": 3590, "categoria":"buzo", "imagen": "img/prod22.jpg", "stock": 7},
+    {"id": 13, "nombre": "Pollera Alma", "precio": 2990, "categoria":"pollera", "imagen": "img/prod23.jpg", "stock": 7},
+    {"id": 14, "nombre": "Pantalon Chick", "precio": 4200, "categoria":"pantalon", "imagen": "img/prod25.jpg", "stock": 4},
+    {"id": 15, "nombre": "Bermuda Golden", "precio": 4550, "categoria":"bermuda", "imagen": "img/prod11.jpg", "stock": 5},
+    {"id": 16, "nombre": "Chaleco Denver", "precio": 3350, "categoria":"chaleco", "imagen": "img/prod26.jpg", "stock": 7},
+    {"id": 17, "nombre": "Bota Tracto", "precio": 8200, "categoria":"bota", "imagen": "img/prod13.jpg", "stock": 6},
+    {"id": 18, "nombre": "Bota Flanco", "precio": 9100, "categoria":"bota", "imagen": "img/prod24.jpg", "stock": 5},
+    {"id": 19, "nombre": "Bota Cairo", "precio": 7150, "categoria":"bota", "imagen": "img/prod14.jpg", "stock": 5},
+    {"id": 20, "nombre": "Sandalia Red - Rojo", "precio": 6990, "categoria":"sandalia", "imagen": "img/prod16.jpg", "stock": 4},
+    {"id": 21, "nombre": "Sandalia Red - Marrón", "precio": 6990, "categoria":"sandalia", "imagen": "img/prod17.jpg", "stock": 6},
+    {"id": 22, "nombre": "Sandalia Gigi", "precio": 6250, "categoria":"sandalia", "imagen": "img/prod18.jpg", "stock": 4},
+    {"id": 23, "nombre": "Bota Tracto Mini", "precio": 7800, "categoria":"bota", "imagen": "img/prod19.jpg", "stock": 2},
+    {"id": 24, "nombre": "Bota Plata", "precio": 9590, "categoria":"bota", "imagen": "img/prod20.jpg", "stock": 8}
+]
+

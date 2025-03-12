@@ -1,48 +1,56 @@
-const spanTotCarr = document.querySelector("span#totCarr")
+const spanTotCarr = document.querySelector("span#amount");
+const spanTotCarr2 = document.querySelector("span#amounts");
+
 
 function retornoCarritoVacio(){
     return `<h3 class="vacio">El carrito está vacío</h3>`
 }
 
+
+
 function mostrarCarrito(carrito){
-    contCarr.innerHTML = ""
+    console.log("Ejecutando mostrarCarrito. Carrito actual:", carrito);
+    cartItems.innerHTML = "";
     if(carrito.length != 0){
         carrito.forEach(prenda => {
-            contCarr.innerHTML += retornoCheckout(prenda) 
+            cartItems.innerHTML += retornoCheckout(prenda);
         });
-        activarClickBorrarDelCarrito()
-        spanTotCarr.innerHTML = "$ " + mostrarTotalCarrito()
+        activarClickBorrarDelCarrito();
+        spanTotCarr.innerHTML = mostrarTotalCarrito();
+        spanTotCarr2.innerHTML = mostrarTotalCarrito();
     }else{
-        contCarr.innerHTML= retornoCarritoVacio()
-        spanTotCarr.innerHTML = "$ 0"
+        cartItems.innerHTML= retornoCarritoVacio()
+        spanTotCarr.innerHTML = "0";
+        spanTotCarr2.innerHTML = "0";
     }
     
 }
 mostrarCarrito(carrito);
 
-//Activo el click para volver a la pantalla de tienda
-const buttons = document.querySelector("i.back-to-store")
-buttons.addEventListener("click", (e)=> {location.href = "index.html"})
 
 
 
 function activarClickBorrarDelCarrito(){
-    const buttons = document.querySelectorAll("button.fa-regular")
+    const buttons = document.querySelectorAll("#cart-data i.fa-regular");
+    console.log(buttons);
     for(boton of buttons){
         boton.addEventListener("click", (e) => {
             let indice = carrito.findIndex(prenda => prenda.id === parseInt(e.target.id))
             carrito.splice(indice,1)
-            almacenarCarrito()
+            guardarCarrito()
+            console.log(carrito)
             mostrarCarrito(carrito)
         })
     }
 }
 
+// Funcion que suma el precio de todos los productos en el carrito
 function mostrarTotalCarrito(){
     return carrito.reduce((acc, prenda) => acc + prenda.precio, 0)
 }
+
 function finCompra(){
-    const buttons = document.querySelectorAll("button.fin")
+    const buttons = document.querySelectorAll("a.continue-btn ")
     for(boton of buttons){
         boton.addEventListener("click", (e) => {
             if(carrito.length > 0){
