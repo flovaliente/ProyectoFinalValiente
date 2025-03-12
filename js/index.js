@@ -46,7 +46,7 @@ function agregarAlCarrito(id){
 
 //Función que activa el click para agregar una prenda al carrito
 function activarClickCarrito(){
-    const buttons = document.querySelectorAll("button.buy-button")
+    const buttons = document.querySelectorAll("button.btn-secondary")
     for(boton of buttons){
         boton.addEventListener("click", (e) => {
             agregarAlCarrito(e.target.id)
